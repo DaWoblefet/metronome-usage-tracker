@@ -40,8 +40,8 @@ function checkValidMetronomeMove() {
         if (!failedInput.classList.contains('red-border')) {
             failedInput.classList.remove('green-border');
             failedInput.classList.add('red-border');
-            failedInput.innerHTML = "❌ " + newMetronomeInput + " is not a callable Metronome move.";
         }
+        failedInput.innerHTML = "❌ " + newMetronomeInput + " is not a callable Metronome move.";
     }
 }
 
