@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Metronome Usage Tracker</title>
+        <link rel="stylesheet" href="metronome-style.css">
+        <script src="metronome-logic.js"></script>
+    </head>
+    <body>
+        <div id="main-header">
+            <img src="https://play.pokemonshowdown.com/sprites/ani/gengar.gif" height="78" width="84">
+            <h1>Metronome Usage Tracker</h1>
+            <img src="https://play.pokemonshowdown.com/sprites/ani/polteageist-antique.gif" height="83" width="98">
+        </div>
+        <p id="description">Use this tool to track the unique moves you find in a Metronome Battle! Can you find them all?</p>
+        <h2>Total Moves Found: <span id="total-metronome-found-count-top">0</span> / 554</span></h2>
+        <div id="new-move-input-container">
+            <input id="new-move-input" type="text" placeholder="Enter move from Metronome here...">
+            <button id="new-move-confirm">Found It!</button><span id="input-result"></span>
+        </div>
+        <div id="failed-input-container">
+            <div class="hide" id="failed-input"></div>
+        </div>
+        <div id="current-metronome-results-container">
+            <div>
+                <h2>✔ Found Moves (<span id="total-metronome-found-count">0</span>)</h2>
+                <div class="metronome-results-container" id="found-metronome-results-container"></div>
+            </div>
+            <div>
+                <h2>🔍 Moves to be Found (<span id="total-metronome-not-found-count">0</span>)</h2>
+                <div class="metronome-results-container" id="not-found-metronome-results-container"></div>
+            </div>
+        </div>
+        <button id="reset-tracker">Reset Metronome Usage Tracker</button>
+        <p><em>Metronome usage tracker developed by Leonard Craft III [<a href="https://twitter.com/DaWoblefet" target="_blank">DaWoblefet</a>]</em>.</p>
+    </body>
+</html>

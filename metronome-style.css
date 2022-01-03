@@ -1,0 +1,128 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f3f3;
+}
+
+#main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+    align-items: center;
+}
+
+@media only screen and (max-width: 420px) {
+    #main-header {
+        column-gap: 0;
+    }
+}
+
+#description {
+    margin: auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#new-move-input-container {
+    display: flex;
+    justify-content: center;
+}
+
+#new-move-input {
+    padding: 5px 10px;
+    text-align: center;
+
+    font-size: 20px;
+}
+
+#new-move-input::placeholder {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 420px) {
+    #new-move-input {
+        font-size: 16px;
+    }
+
+    #new-move-input::placeholder {
+        font-size: 12px;
+    }
+}
+
+#new-move-confirm {
+    padding: 5px 10px;
+}
+
+#failed-input-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    min-height: 40px;
+}
+
+#failed-input {
+    padding: 5px 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.green-border {
+    border-color: green;
+}
+
+.red-border {
+    border-color: red;
+}
+
+.hide {
+    display: none;
+}
+
+#current-metronome-results-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 750px) {
+    #current-metronome-results-container {
+        flex-direction: column;
+    }
+}
+
+.metronome-results-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.metronome-results {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+#not-found-metronome-results {
+    columns: 4;
+}
+
+@media only screen and (max-width: 850px) {
+    #not-found-metronome-results {
+        columns: 3;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #not-found-metronome-results {
+        columns: 2;
+    }
+}
+
+#reset-tracker {
+    padding: 5px 10px;
+}
