@@ -88,6 +88,7 @@ function displayCurrentMetronomeResults() {
         }
         foundContent += '</ul>';
     } else { // no moves found at all (start)
+        foundContent = "<em>you haven't found any moves lol</em>";
         notFoundContent = '<ul class="metronome-results" id="not-found-metronome-results">';
         ALL_METRONOME_NAMES.forEach(function(move) {
             notFoundContent += '<li>' + move + '</li>';
