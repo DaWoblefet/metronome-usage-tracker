@@ -125,7 +125,7 @@ function sortFoundMoves(metronomeStorage) {
 }
 
 function resetTrackerPrompt() {
-    const willReset = confirm("Are you sure you want to reset the metronome usage tracker? All your progress will be deleted.");
+    const willReset = confirm("Are you sure you want to reset the metronome usage tracker? All your found moves will be erased.");
     if (willReset) {
         localStorage.removeItem('metronome-usage-tracker');
         displayCurrentMetronomeResults();
